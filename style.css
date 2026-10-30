@@ -1,0 +1,396 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #0B0B0B;
+    color: #F5F5F5;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 20px;
+    background-color: #141414;
+    color: #F5F5F5;
+    border-radius: 12px;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #332817;
+    background-color: #080808;
+    color: #F5F5F5;
+}
+
+header p {
+    color: #B8B8B8;
+    margin: 5px 0 18px;
+}
+
+.teste {
+    color: #C8A24D;
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 6px 10px;
+    text-decoration: none;
+    color: #F5F5F5;
+    transition: color 0.3s ease;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color: #C8A24D;
+    background-color: #1A1A1A;
+}
+
+.teste1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    background-color: #141414;
+    color: #C8A24D;
+}
+
+hr {
+    border: none;
+    margin-bottom: 8px;
+    border-top: 1px solid #C8A24D;
+}
+
+section > h2 {
+    margin-bottom: 8px;
+    color: #C8A24D;
+    font-size: 30px;
+}
+
+section > p {
+    margin-bottom: 25px;
+}
+
+.banner-principal {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 50px;
+
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("Imagem\ do\ ChatGPT\ 30\ de\ out.\ de\ 2026\,\ 16_47_24.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-ofertas {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 50px;
+
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("Imagem\ do\ ChatGPT\ 30\ de\ out.\ de\ 2026\,\ 15_22_13.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-conteudo {
+    max-width: 580px;
+}
+
+.subtitulo {
+    color: #C8A24D;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.banner-ofertas h1 {
+    margin: 15px 0;
+    font-size: clamp(34px, 5vw, 54px);
+    line-height: 1.15;
+}
+
+.banner-ofertas h1 span {
+    color: #C8A24D;
+}
+
+.banner-principal h1 {
+    margin: 15px 0;
+    font-size: clamp(34px, 5vw, 54px);
+    line-height: 1.15;
+}
+
+.banner-principal h1 span {
+    color: #C8A24D;
+}
+
+.botao-banner {
+    font-weight: bold;
+    display: inline-block;
+    padding: 13px 22px;
+    text-decoration: none;
+    color: #0B0B0B;
+    background-color: #C8A24D;
+    border-radius: 5px;
+    border: 1px solid #C8A24D;
+    transition: background-color 0.3s ease;
+}
+
+.botao-banner:hover {
+    color: #FFFFFF;
+    background-color: #A88332;
+    transform: translateY(-2px);
+}
+
+.banner-inicio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 12px;
+    background-color: #141414;
+    color: #F5F5F5;
+}
+
+.banner-inicio img {
+    object-fit: cover;
+    height: 300px;
+    width: 45%;
+    border-radius: 10px;
+}
+
+.banner-inicio .banner-conteudo {
+    flex: 1;
+}
+
+.banner-inicio h1 span {
+    color: #C8A24D;
+}
+
+.banner-sobre {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 12px;
+    background-color: #141414;
+    color: #F5F5F5;
+}
+
+.banner-sobre img {
+    object-fit: cover;
+    height: 300px;
+    width: 45%;
+    border-radius: 10px;
+}
+
+.banner-sobre .banner-conteudo {
+    flex: 1;
+}
+
+.banner-sobre h1 span {
+    color: #C8A24D;
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.card {
+    position: relative;
+    min-height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 12px;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    background-color: #141414;
+    color: #F5F5F5;
+    border: 1px solid #2A2A2A;
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(200, 162, 77, 0.2);
+    transform: translateY(-5px);
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    height: 190px;
+}
+
+.card h3 {
+    font-size: 21px;
+    margin: 15px 0 8px;
+    color: #C8A24D;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.botao-card {
+    background-color: #C8A24D;
+    color: #0B0B0B;
+    border: 1px solid #C8A24D;
+    padding: 7px 12px;
+    border-radius: 13px;
+    cursor: pointer;
+    font-weight: 700px;
+    transition: 0.3s
+}
+
+.botao-card:hover {
+    background-color: #A88332;
+    color: #ffffff;
+}
+
+.selo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+
+    background-color: #C8A24D;
+    color: #0B0B0B;
+
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.preco {
+    font-weight: bold;
+    margin-top: 16px;
+    font-size: 16px;
+    color: #C8A24D;
+}
+
+footer {
+    background-color: #080808;
+    color: #F5F5F5;
+    padding: 40px;
+    margin-top: 40px;
+    border-top: 1px solid #C8A24D;
+}
+
+footer h2 {
+    color: #C8A24D;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #bdbdbd;
+    line-height: 1.8;
+}
+
+footer a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #C8A24D;
+}
+
+#sobre,
+#contato {
+    line-height: 1.8;
+}
+
+#contato ul {
+    padding-left: 22px;
+}
+
+#contato li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 950px) {
+    .container-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    .banner {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        padding: 18px 14px;
+    }
+
+    .teste {
+        font-size: 30px;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .banner {
+        padding: 24px;
+        min-height: 380px;
+        background-position: center;
+    }
+
+    .banner h1 {
+        font-size: 34px;
+    }
+
+    .container-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 220px;
+    }
+
+    section > h2 {
+        font-size: 26px;
+    }
+
+    hr {
+        margin: 30px 0;
+    }
+}
+
+.banner .descriçao {
+    color: #F5F1E8;
+}
