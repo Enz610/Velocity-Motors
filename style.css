@@ -391,6 +391,45 @@ footer a:hover {
     }
 }
 
-.banner .descriçao {
-    color: #F5F1E8;
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    main {
+        padding: 15px 10px;
+    }
+
+    .banner-inicio,
+    .banner-sobre {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .banner-inicio img,
+    .banner-sobre img {
+        width: 100%;
+        max-width: 350px;
+        height: 250px;
+    }
+
+    .banner-inicio .banner-conteudo,
+    .banner-sobre .banner-conteudo {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .banner-inicio h1,
+    .banner-sobre h1 {
+        font-size: 32px;
+        overflow-wrap: break-word;
+    }
+
+    .banner-inicio p,
+    .banner-sobre p {
+        overflow-wrap: break-word;
+    }
+
 }
